@@ -1,0 +1,26 @@
+{
+  "name": "expressjs-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently \"npm run start:build \" \"npm run start:run\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micScofield/expressjs-typescript-integration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/micScofield/expressjs-typescript-integration/issues"
+  },
+  "homepage": "https://github.com/micScofield/expressjs-typescript-integration#readme",
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15"
+  }
+}
