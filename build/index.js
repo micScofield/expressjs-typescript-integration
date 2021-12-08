@@ -4,8 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
+var loginRoutes_1 = require("./routes/loginRoutes");
 var app = (0, express_1.default)();
-app.get('/', function (req, res) {
-    res.send("\n        <h1>Hello World</h1>\n    ");
-});
+app.use(loginRoutes_1.router);
 app.listen(3000, function () { return console.log("Listening on port 3000"); });
